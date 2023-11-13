@@ -9,6 +9,9 @@
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
+        background-image: url(wallpaper.mp4);
+        background-repeat: repeat;
+        background-size: cover;
     }
 
     .header, .footer {
@@ -63,24 +66,11 @@
         width: 150px;
         text-align: center;
     }
-    #bg-video {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1;
-}
+
 </style>
 </head>
 <body>
- <div>
-  <video autoplay muted loop id="bg-video">
-    <source src="wallpaper.mp4" type="video/mp4">
-    <!-- Assurez-vous d'ajouter des formats de vidéo supplémentaires pour une meilleure compatibilité -->
-    <!-- <source src="chemin/vers/votre/video.webm" type="video/webm"> -->
-    Votre navigateur ne prend pas en charge la lecture vidéo.
-  </video>
+ 
   <div class="header">
     <h1>NisukyTV WEB - Connexion à Discord</h1>
   </div>
@@ -110,7 +100,6 @@
     <p>Copyright &copy; 2023. Tous droits réservés.</p>
     <p>Date de Maintenance: 13/11/2023</p>
   </div>
-</div>
 
   <script src="login.js"></script>
 </body>
