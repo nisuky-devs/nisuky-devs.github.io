@@ -1,23 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="login.css">
- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
- <script src="login.js" defer></script>
- <title>Login</title>
+  <meta charset="UTF-8">
+  <title>Connexion Discord</title>
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous">
+
 </head>
 <body>
- <div class="container">
-    <h1>Login</h1>
-    <div class="button-container">
-      <button id="discord-login-button">
-        <i class="fab fa-discord"></i>
-        Connexion avec Discord
-      </button>
+  <div class="login-page">
+    <div class="login-container">
+      <h1>Connexion à Discord</h1>
+      <a href="#" onclick="redirectToDiscord()">
+        <div class="discord-button">
+            <i class="fa-brands fa-discord" style="color: #ffffff;"></i>
+        </div>
+      </a>
     </div>
- </div>
- <footer>Your Footer Here</footer>
+  </div>
+
+  <footer>
+    <!-- Votre contenu de pied de page ici -->
+  </footer>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
