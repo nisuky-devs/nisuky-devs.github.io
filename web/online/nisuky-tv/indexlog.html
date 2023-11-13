@@ -2,27 +2,101 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Connexion Discord</title>
-  <link rel="stylesheet" href="login.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous">
+  <title>Connexion NisukyTV Web</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url(wallpaper.mp4);
+    }
 
+    .header, .footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 140px);
+        background-color: #f5f5f5;
+    }
+
+    .login-bloc {
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .login-bloc img {
+        width: 125px;
+        height: 125px;
+    }
+
+    .login-bloc button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    .login-bloc button:hover {
+        background-color: #0056b3;
+    }
+
+    .login-frames {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .login-frame {
+        width: 150px;
+        text-align: center;
+    }
+</style>
 </head>
 <body>
-  <div class="login-page">
-    <div class="login-container">
-      <h1>Connexion à Discord</h1>
-      <a href="#" onclick="redirectToDiscord()">
-        <div class="discord-button">
-            <i class="fa-brands fa-discord" style="color: #ffffff;"></i>
+  <div class="header">
+    <h1>NisukyTV WEB - Connexion à Discord</h1>
+  </div>
+
+  <div class="container">
+    <div class="login-bloc">
+      <h2>Choisissez votre connexion</h2>
+
+      <div class="login-frames">
+        <div class="login-frame">
+          <button disabled>Me connecter via Google</button>
+          <sub>Fonctionnalité en cours de maintenance.</sub>
         </div>
-      </a>
+
+        <div class="login-frame">
+          
+          <button onclick="redirectToDiscord()">
+            <i class="fab fa-discord"></i>
+            Se connecter via Discord</button>
+          
+        </div>
+      </div>
     </div>
   </div>
 
-  <footer>
-    <!-- Votre contenu de pied de page ici -->
-  </footer>
+  <div class="footer">
+    <p>Copyright &copy; 2023. Tous droits réservés.</p>
+    <p>Date de Maintenance: 13/11/2023</p>
+  </div>
 
-  <script src="scripts.js"></script>
+  <script src="login.js"></script>
 </body>
 </html>
