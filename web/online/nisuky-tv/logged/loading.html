@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" type="text/css" href="loading.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      /* Votre CSS existant reste inchangé, assurez-vous d'avoir les styles pour .loading-complete */
+
+body {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.loading-container {
+    text-align: center;
+    color: #fff;
+}
+
+.loading-spinner {
+    border: 6px solid rgba(255, 255, 255, 0.3);
+    border-top: 6px solid #ff8800;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 20px auto;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading-complete {
+    border-top-color: #00FF00; /* Couleur verte */
+}
+
+    </style>
+</head>
+<body>
+    <div class="loading-container">
+        <h1>Nisuky TV WEB</h1>
+        <br>
+        <div class="loading-spinner" id="loading-spinner"></div>
+        <p id="loading-text">Chargement en cours...</p>
+        <p>Version 0.4</p>
+        <br>
+        <p>L'application est en affichage web. <br>Certaines fonctionnalités peuvent être obsolètes et/ou absentes.</p>
+    </div>
+
+    <script>
+        const loadingText = document.getElementById('loading-text');
+        const loadingSpinner = document.getElementById('loading-spinner');
+
+        const paragraphs = [
+            "Chargement en cours...",
+            "Récupération des données...",
+            "Appel des API",
+            "Chargement des maintenances.",
+            "Redirection"
+        ];
+
+        let index = 0;
+
+        function showNextParagraph() {
+            if (index < paragraphs.length) {
+                loadingText.textContent = paragraphs[index];
+                index++;
+
+                if (index === paragraphs.length) {
+                    loadingSpinner.classList.add('loading-complete'); // Ajout de la classe pour la couleur verte
+                    setTimeout(() => {
+                        window.location.href = "page_principale.html"; // Redirection après 2 secondes
+                    }, 2000);
+                } else {
+                    setTimeout(showNextParagraph, 3000); // Changement de texte toutes les 3 secondes
+                }
+            }
+        }
+
+        showNextParagraph();
+    </script>
+</body>
+</html>
