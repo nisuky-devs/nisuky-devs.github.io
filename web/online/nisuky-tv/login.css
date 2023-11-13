@@ -1,0 +1,51 @@
+body {
+    background-image: url('your-customizable-wallpaper-url-here');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+   }
+   
+   .container {
+    background-color: #2c2f33;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+   }
+   
+   h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+   }
+   
+   .button-container {
+    display: flex;
+    justify-content: center;
+   }
+   
+   #discord-login-button {
+     background-color: #7289DA;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+   }
+   
+   #discord-login-button:hover {
+    background-color: #677bc4;
+   }
+   
+   footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c2f33;
+    color: #ffffff;
+    margin-top: auto;
+   }
