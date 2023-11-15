@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choix du Service - NisukyTV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header, .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 140px);
+            background-color: #f5f5f5;
+        }
+
+        .login-bloc {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .login-bloc img {
+            width: 125px;
+            height: 125px;
+        }
+
+        .login-bloc button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .login-bloc button:hover {
+            background-color: #0056b3;
+        }
+
+        .login-frames {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .login-frame {
+            width: 150px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>NisukyTV - Connexion</h1>
+    </div>
+
+    <div class="container">
+        <div class="login-bloc">
+            <h2>Login</h2>
+
+            <div class="login-frames">
+                <div class="login-frame">
+                    <img src="assets/member.png" alt="Membres Logo">
+                    <button onclick="window.location.href='404.html'">Je suis Membre</button>
+                    <sub>Cette fonctionnalité est encore en cours de Développement.</sub>
+                </div>
+
+                <div class="login-frame">
+                    <img src="assets/beta.png" alt="Logo">
+                    <button onclick="window.location.href='beta_testeurs/login.html'">Je suis Bêta Testeur</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Copyright &copy; 2023. All rights reserved.</p>
+    </div>
+</body>
+</html>
