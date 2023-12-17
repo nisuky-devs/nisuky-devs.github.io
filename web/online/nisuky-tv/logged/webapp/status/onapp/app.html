@@ -11,6 +11,8 @@
             --text-color-light: #333;
             --background-color-dark: #2a2c2c;
             --text-color-dark: #ecf0f1;
+            --header-dark-mode:#186192;
+            --color-severity-low-dark-mode: #19a3ff;
         }
 
         body {
@@ -34,7 +36,7 @@
         }
 
         header.dark-mode {
-            background-color: #186192;
+            background-color: var(--header-dark-mode);
             text-align: center;
             padding: 20px;
             color: #fff;
@@ -125,7 +127,7 @@
         }
 
         .severity-low.dark-mode {
-            color: #3498db;
+            color: var(--color-severity-low-dark-mode);
         }
 
         .dark-mode-button {
