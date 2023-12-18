@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Erreurs Développeurs</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <style>
         body {
             box-sizing: border-box;
@@ -83,7 +84,7 @@
 <div class="page">
     <div class="header1">
         <div class="title">WIKI sur les erreurs trouvées sur le site</div>
-        <div class="presentation">Vous retrouverez sur cette page toutes les informations sur les erreurs que vous pourriez avoir .</div>
+        <div class="presentation">Vous retrouverez sur cette page toutes les informations sur les erreurs que vous pourriez avoir sur les bugs dues aux actions de développement.</div>
         <button onclick="toggleContent()">Mode Développeur non fonctionnel sur les Statuts.</button>
     </div>
     <div class="content" id="content">
@@ -93,6 +94,22 @@
 </div>
 
 <script>
+    const Toast = Swal.mixin({
+  toast: true,
+  position: "top-end",
+  showConfirmButton: false,
+  timer: 7000,
+  timerProgressBar: true,
+  didOpen: (toast) => {
+    toast.onmouseenter = Swal.stopTimer;
+    toast.onmouseleave = Swal.resumeTimer;
+  }
+});
+Toast.fire({
+  icon: "warning",
+  title: "Du contenu présenté peut être absent ou incomplet! "
+});
+
     function toggleContent() {
         var content = document.getElementById('content');
         content.style.display = (content.style.display === 'none') ? 'block' : 'none';
