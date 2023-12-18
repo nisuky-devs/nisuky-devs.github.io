@@ -35,9 +35,10 @@
             background: black;
             border: none;
             margin-bottom: 20px;
+            text-align: center;
         }
 
-        .header {
+        .header1 {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -80,7 +81,7 @@
 <body>
 
 <div class="page">
-    <div class="header">
+    <div class="header1">
         <div class="title">WIKI sur les erreurs trouvées sur le site</div>
         <div class="presentation">Vous retrouverez sur cette page toutes les informations sur les erreurs que vous pourriez avoir .</div>
         <button onclick="toggleContent()">Mode Développeur non fonctionnel sur les Statuts.</button>
@@ -96,6 +97,7 @@
         var content = document.getElementById('content');
         content.style.display = (content.style.display === 'none') ? 'block' : 'none';
     }
+
 </script>
 
 </body>
