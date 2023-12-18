@@ -10,6 +10,7 @@
     <meta property="og:description" content="Etats de Service du Site Web NISUKY TV">
     <meta property="og:image" content="https://nisuky-devs.github.io/web/online/nisuky-tv/logged/webapp/status/onapp/image.jpg">
     <meta property="og:url" content="https://nisuky-devs.github.io/web/online/nisuky-tv/logged/webapp/status/onapp/app.html">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <style>
         body {
             margin: 0;
@@ -104,7 +105,7 @@
             color: #30acff;
         }
 
-        .dark-mode-button {
+        .developer-mode_button {
             position: fixed;
             top: 20px;
             right: 20px;
@@ -119,7 +120,7 @@
 </head>
 <body>
 
-<button class="dark-mode-button" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+<button class="developer-mode_button" onclick="developerModeActive()">Mode Développeur</button>
 
 <header>
     <img src="https://yt3.googleusercontent.com/nVISkzMhLlGdndKcFM99-pmj3Rxdq9n2B0Vfd-pkOG0ULjS24ZVV66Or-VE5g2QFQdJk6gkwXWs=s176-c-k-c0x00ffffff-no-rj" alt="Logo du site">
@@ -141,8 +142,13 @@
         <div class="severity severity-high"><h1>Intégration de contenu au site et nouvelles maintenances </h1></div>
     </div>
     <div class="incident">
-        <div class="incident-date">Nov 16, 08:53 UTC+1</div>
+        <div class="incident-date">Dec 18, 08:44 UTC+1</div>
+        <div class="severity severity-medium"> Maintenance - Nos équipes de développement lancent la maintenance sur le site web. De nouveaux contenus vont être intégrés notamment la page des biographies et le qui sommes-nous. </div>
+    </div>
+    <div class="incident">
+        <div class="incident-date">Dec 16, 08:53 UTC+1</div>
         <div class="severity severity-low">Annoncée - De nouveaux ajouts et une maintenance sont programmés par l'équipe de développement. </div>
+    </div>
 </div>
     
 <div class="incident-history">
@@ -198,10 +204,14 @@
 </div>
 
 <script>
-    function toggleDarkMode() {
-        const body = document.body;
-        body.classList.toggle('dark-mode');
-    }
+    function developerModeActive() {
+    Swal.fire({
+  icon: "error",
+  title: "Oops...",
+  text: "Quelque chose s'est mal déroulé!",
+  footer: '<a href="#">Pourquoi ai-je cette erreur? - Page Indisponible</a>'
+});
+}
 </script>
 
 </body>
