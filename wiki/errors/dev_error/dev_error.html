@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Développeurs</title>
     <meta name="author" content="Nakano>
     <title>Erreurs Développeurs</title>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -109,11 +110,11 @@
 </div>
 
 <script>
-    const Toast = Swal.mixin({
+   const Toast = Swal.mixin({
   toast: true,
   position: "top-end",
   showConfirmButton: false,
-  timer: 7000,
+  timer: 3000,
   timerProgressBar: true,
   didOpen: (toast) => {
     toast.onmouseenter = Swal.stopTimer;
@@ -122,13 +123,14 @@
 });
 Toast.fire({
   icon: "warning",
-  title: "Impossible de se connecter à la base de données Nisuky_Help. Une correction est en cours"
+  title: "Des problèmes peuvent survenir! Soyez vigilants!"
 });
 
-    function toggleContent() {
-        var content = document.getElementById('content');
-        content.style.display = (content.style.display === 'none') ? 'block' : 'none';
-    }
+
+function toggleContent() {
+    var content = document.getElementById('content');
+    content.style.display = (content.style.display === 'none') ? 'block' : 'none';
+}
 
 </script>
 
