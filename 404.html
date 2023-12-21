@@ -45,14 +45,47 @@
             left:50%;
             transform: translate(-50%, -50%);
         }
+        .access {
+            position: fixed;
+            top: 10px; /* Ajustez la valeur en fonction de la distance souhaitée depuis le haut de l'écran */
+            right: 10px; /* Ajustez la valeur en fonction de la distance souhaitée depuis la droite de l'écran */
+            margin-right: 8px;
+            padding: 2px 6px;
+            border-radius: 4px;
+            background: linear-gradient(#ff00a5, #f65538);
+        }
+
     </style>
 </head>
 <body>
+    <button class="access" id="boutonSon"></button>
     <h1>404 | Page Introuvable</h1>
     <p>Cette page est inacessible ou à été déplacée. Vérifiez vos permissions d'accès à cette page.</p>
-    <video autoplay loop muted>
+    <video id="video_wallpaper" autoplay loop muted>
         <source src="https://nisuky-devs.github.io/wallpaper.mp4" type="video/mp4">
         Votre navigateur ne supporte pas les fonds d'écrans animés? Pas cool tout ça....
     </video>
+
+    <script>
+          // Récupérer la référence de la vidéo et du bouton
+  var maVideo = document.getElementById('video_wallpaper');
+  console.log("Accès à la vidéo autorisé!")
+  var boutonSon = document.getElementById('boutonSon');
+  console.log("Accès au bouton autorisé!")
+
+  // Ajouter un gestionnaire d'événement au clic sur le bouton
+  boutonSon.addEventListener('click', function() {
+    // Vérifier si le son est actuellement activé ou désactivé
+    if (maVideo.muted) {
+      // Si le son est désactivé, l'activer
+      maVideo.muted = false;
+      boutonSon.textContent = 'Désactiver le son';
+    } else {
+      // Si le son est activé, le désactiver
+      maVideo.muted = true;
+      boutonSon.textContent = 'Activer le son';
+    }
+  });
+    </script>
 </body>
 </html>
