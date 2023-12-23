@@ -25,7 +25,7 @@ body {
 
 .loading-spinner {
     border: 6px solid rgba(255, 255, 255, 0.3);
-    border-top: 6px solid #ff8800;
+    border-top: 6px solid #ff00c8;
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -50,12 +50,9 @@ body {
         <br>
         <div class="loading-spinner" id="loading-spinner"></div>
         <p id="loading-text">Chargement en cours...</p>
-        <p>Version 0.4</p>
+        <p>Version 0.5</p>
         <br>
         <p>L'application est en affichage web. <br>Certaines fonctionnalités peuvent être obsolètes et/ou absentes.</p>
-        <br>
-        <br>
-        <p>Connecté(e) en tant que:<i><b>{discord_logged_username}</b></i> </p>
     </div>
 
     <script>
@@ -63,7 +60,7 @@ const Toast = Swal.mixin({
   toast: true,
   position: "top-end",
   showConfirmButton: false,
-  timer: 3000,
+  timer: 4000,
   timerProgressBar: true,
   didOpen: (toast) => {
     toast.onmouseenter = Swal.stopTimer;
@@ -80,8 +77,7 @@ Toast.fire({
         const paragraphs = [
             "Chargement en cours...",
             "Récupération des données...",
-            "Appel des API",
-            "Chargement des maintenances.",
+            "Appel des statuts.",
             "Redirection"
         ];
 
@@ -98,7 +94,7 @@ Toast.fire({
                         window.location.href = "./webapp/index.html"; // Redirection après 2 secondes
                     }, 2000);
                 } else {
-                    setTimeout(showNextParagraph, 3000); // Changement de texte toutes les 3 secondes
+                    setTimeout(showNextParagraph, 2000); // Changement de texte toutes les 3 secondes
                 }
             }
         }
