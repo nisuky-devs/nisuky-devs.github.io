@@ -117,16 +117,16 @@ section ul li:hover {
 #devlog-button {
     display: inline-block;
     padding: 10px 20px; /* Marge interne du bouton */
-    border-radius: 20px; /* Coins arrondis */
+    border-radius: 17px; /* Coins arrondis */
     color: #fff; /* Couleur du texte en blanc */
     background-color: #0074D9; /* Couleur de fond en état normal (bleu) */
     font-weight: bold;
     margin-top: 10px;
 }
 
-/* Style pour le bouton en état survolé (vert) */
+/* Style pour le bouton en état survolé (violet) */
 #devlog-button:hover {
-    background-color: #2ECC40; /* Couleur de fond en état survolé (vert) */
+    background-color: #c812d8; /* Couleur de fond en état survolé (violet) */
     cursor: pointer;
 }
 
