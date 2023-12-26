@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ANNONCE</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
             margin: 0;
@@ -68,34 +67,31 @@
 </head>
 <body>
     <div class="notification">
-        <h2>Arrivée de contenu sur le site!</h2>
+        <h2>Pages Biographies</h2>
         <div class="author">
             <div class="author-info">
-                <h2>Nakano SAn</h2>
+                <h2>Nakano San</h2>
                 <button class="author-button" disabled>
-                    <i class="fa-thin fa-badge-check"></i> Développeur de NisukyTV
+                    <img src="agree.png" alt="Nisuky Devs - Icon"></img> 
+                    Développeur de NisukyTV
                 </button>
             </div>
         </div>
-        <ul>
-            <li>ANNONCE 1</li>
-            <li>ANNONCE 2</li>
-            <!-- etc... -->
-        </ul>
-        <button class="btn">Marquer comme lu</button>
+        <div class="annonce 1">
+            <p>Bienvenue à vous sur la page des Biographies! Vous pourrez retrouver des présentations de personnes ayant influencé la communauté de Nisuky!</p>
+            <br>
+            <p><b><i>Membres présents sur ce wiki: 0</i></b></p>
+            <br>
+            <p><b><i>Ce wiki est en cours de développement et malheureusement, le contenu est indisponible.</i></b></p>
+        </div>
+        <button onclick="static">Accéder aux Biographies</button>
     </div>
     <script>
-        window.addEventListener('load', function () {
-            if (!localStorage.getItem('annonceVue')) {
-                document.querySelector('.notification').style.display = 'block';
-            }
+        function static() {
+            alert('Vous allez être redirigés vers l\'accueil.')
+            window.location.href='https://nisuky-devs.github.io/web/online/nisuky-tv/logged/webapp/index.html?referrer='
+        }
 
-            document.querySelector('.btn').addEventListener('click', function (e) {
-                e.preventDefault();
-                localStorage.setItem('annonceVue', true);
-                document.querySelector('.notification').style.display = 'none';
-            });
-        });
     </script>
 </body>
 </html>
