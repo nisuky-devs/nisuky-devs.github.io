@@ -120,6 +120,22 @@
             border-radius: 5px;
             cursor: pointer;
         }
+        .home_refer-id {          
+            background-color: rgb(27, 58, 235);
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor:pointer;
+        }
+        .home_refer-id:hover {          
+            background-color: rgb(27, 58, 235);
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor:pointer;
+        }
     </style>
 </head>
 <body>
@@ -132,6 +148,7 @@
 <header>
     <img src="https://yt3.googleusercontent.com/nVISkzMhLlGdndKcFM99-pmj3Rxdq9n2B0Vfd-pkOG0ULjS24ZVV66Or-VE5g2QFQdJk6gkwXWs=s176-c-k-c0x00ffffff-no-rj" alt="Logo du site">
     <h1>NisukyTV Status</h1>
+    <button class="home_refer-id" onclick="returnhome()">Retourner à l'accueil du site</button>
 </header>
 <br>
 
@@ -245,6 +262,12 @@
 });
 }
 console.error("Impossible de connecter à l'espace Développeurs")
+
+function returnhome() {
+    alert("Retour à l'accueil")
+    window.location.href('https://nisuky-devs.github.io/web/online/nisuky-tv/logged/webapp/index.html')
+}
+
 </script>
 
 </body>
