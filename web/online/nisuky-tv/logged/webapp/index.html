@@ -38,30 +38,53 @@ figcaption {
             text-align: center;
             font-weight: bold;
         }
-.maintenance-icon {
+.fa-clock {
     color: #000000; /* Couleur blanche pour l'icône */
     font-size: 24px; /* Taille de l'icône */
     margin-right: 5px; /* Marge à droite pour l'espacement */
+        }
+        .developer-mode_button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button2 {
+          background-color:rgb(76, 0, 255);
+          color: #fff;
+          padding: 10px;
+          border: none;
+          border-radius: 7px;
+          cursor: pointer;
         }        
+        .button2:hover {
+          background-color: rgb(48, 0, 161);
+        }
 
 </style>
 </head>
 <body>
   <script>//no script lmao</script>
+  <button class="developer-mode_button" onclick="dev_thanking()">Message de Remerciement du Développeur</button>
+
   
-    <header><!--
+    <header>
       <div class="maintenance-banner">
-        <i class="fas fa-wrench maintenance-icon"></i>
-        <p>Site fonctionnel!</p>
+        <p>Evènements en cours!</p>
+        <button class="button2" onclick="toggle_dis_event()">Accéder à l'évènement.</button>
     </div>
-    -->
          <div class="header_title">
             <h2>Nisuky TV - Accueil</h2>
          </div>       
         <nav>
           <ul>
             <li><a href="#">Programmation</a></li>
-            <li><a href="#">Evènements</a></li>
+            <li><a href="events/intro.html">Evènements</a></li>
             <li><a href="#">Vidéos</a></li>
             <li><a href="https://discord.com/invite/X3GyhK3n7E">Serveur Discord</a></li>
             <li><a href="status/onapp/app.html">Statuts App</a></li>
@@ -128,5 +151,15 @@ figcaption {
         <p>Version: Version 0.5.110</p>
         <p><a href="mailto:nisuky-devs@gmx.fr">Nous Contacter?</a></p>
       </footer>
+      <script>
+        function dev_thanking() {
+          console.log("Bouton Non fonctionnel.")
+        }
+        function toggle_dis_event() {
+          alert("Page demandée actuellement indisponible")
+          console.log("Redirection Impossible - Domaine inexistant")
+          // Redirection sur la page concernée.
+        }
+      </script>
 </body>
 </html>
