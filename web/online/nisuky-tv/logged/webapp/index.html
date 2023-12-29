@@ -9,7 +9,6 @@
 <link rel="preconnect" href="google.com">
 <link rel="preconnect" href="https://cdnjs.cloudflare.com/">
 <link rel="preconnect" href="youtube.com/@Nisuky">
-<link rel="preconnect" href="bing.com">
 <style>
 .bandeau-images {
   display: flex;
@@ -76,7 +75,7 @@ figcaption {
     <header>
       <div class="maintenance-banner">
         <p>Evènements en cours!</p>
-        <button class="button2" onclick="toggle_dis_event()">Accéder à l'évènement.</button>
+        <button class="button2" onclick="toggle_dis_event()">Accéder à la page événementielle.</button>
     </div>
          <div class="header_title">
             <h2>Nisuky TV - Accueil</h2>
@@ -156,8 +155,7 @@ figcaption {
           console.log("Bouton Non fonctionnel.")
         }
         function toggle_dis_event() {
-          alert("Page demandée actuellement indisponible")
-          console.log("Redirection Impossible - Domaine inexistant")
+          window.location.href="/events/intro.html"
           // Redirection sur la page concernée.
         }
       </script>
