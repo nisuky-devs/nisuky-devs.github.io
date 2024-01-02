@@ -1,0 +1,78 @@
+body {
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    font-size: 16px;
+}
+h1 {
+    margin-bottom: 20px;
+}
+
+nav a:hover {
+    color:gold
+}
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+.linking {
+    color: blueviolet;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.5); /* Légère transparence sur le fond */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ffffff;
+    text-align: center;
+}
+
+th {
+    background-color: #333;
+}
+
+td {
+    background-color: #444;
+}
+.icon-container {
+    text-align: center;
+}
+
+.icon-container img {
+    border-radius: 50%; /* Pour créer un cadre circulaire */
+}
