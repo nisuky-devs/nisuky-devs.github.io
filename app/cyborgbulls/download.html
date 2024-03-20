@@ -134,7 +134,7 @@
 
           <div id="list">
               <div class="item">
-                <div class="fileType"><!--exe--> <!--<span class="url"><a href="">/download/exe</a></span></div> -->
+                <div class="fileType">exe <span class="url"><a onclick="notified()">>/download/exe</a></span></div>
                 <div class="size">150 Mb</div>
               </div>
           </div>
@@ -142,10 +142,16 @@
           <footer>
             <div id="version">v1.1.0</div>
             
-            <div id="version">Version non publiee. Arrivee prochaine</div>
+            <div id="version">Version non publiée. Arrivée prochaine</div>
 
           </footer>
       </main>
     </div>
   </body>
+  <script>
+    function notified() {
+        console.error("Fichiers app non uploadés")
+        alert("ERREUR: Les fichiers de l'application CYBORGBULLS SCOUTING n'ont pas encore été ajoutés au webstore")
+    }
+  </script>
 </html>
