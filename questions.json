@@ -4,8 +4,19 @@
     "team_location": "Saint-Christol-les-Alès, France",
     "award_submitters": "Fabre-C. Antoine & 9102 IMPACT TEAM",
     "questions": [
-        { "question": "Quel est votre objectif principal ?", "answer": "" },
-        { "question": "Pourquoi avez-vous choisi ce nom ?", "answer": "" },
-        { "question": "Quelles sont vos forces ?", "answer": "" }
+        { "question": "Describe the impact of the FIRST program on team participants within the last 3 years. Think about percentages of those graduating high school, attending college, in STEM careers, leadership skills, and serving as mentors/sponsors in FIRST programs.", "answer": "" },
+        { "question": "Describe your community along with its unique opportunities and circumstances. Think about your geographic region, diversity of town/school, language barriers, socioeconomic barriers, and cultural expectations.", "answer": "" },
+        { "question": "Describe the team's methods, with emphasis on the past 3 years, for spreading the FIRST Mission in ways that are effective, scalable, sustainable, and creative.", "answer": "" },
+        { "question": "Describe your team's goals and the progress you have made towards them to fulfill FIRST’s Vision.", "answer": "" },
+        {"question": "What impact has your team seen from your efforts described in the above question? How does your team measure impact?", "answer":""},
+        {"question": "Please provide specific examples of how your team and team members act as role models within the FIRST community with emphasis on the past 3 years. How do you share these best practices with other teams?", "answer": ""},
+        {"question": "Describe your team's initiatives to Assist, Mentor, and/or Start other FIRST teams with emphasis on activities within the past 3 years.", "answer": ""},
+        {"question": "What other initiatives have you created, grown, sustained, or participated in (FIRST or otherwise) to help inspire young people to be science and technology leaders and innovators? What outcomes have you seen from your efforts in the past 3 years?", "answer": ""},
+        {"question": "Describe the partnerships and relationships that you've created with other organizations (teams, sponsors, educational institutions, government, philanthropic entities, etc.) and what you have accomplished together, with emphasis on the past 3 years.", "answer": ""},
+        {"question": "Describe your team's efforts in the past 3 years to promote equity, diversity, and inclusion within your team, FIRST, and your communities.", "answer": ""},
+        {"question": "Explain how you ensure your team and the initiatives you have created will be sustainable.", "answer": ""},
+        {"question": "Highlight one area in which your team needs to improve and describe the steps actively being taken to make those improvements.", "answer": ""},
+        {"question": "Briefly describe other matters of interest to the FIRST Judges, including items that may not fit into the above topics. The judges are interested in learning about aspects of your team that may be unique, particularly noteworthy, or had a large impact.", "answer": ""}
+
     ]
 }
