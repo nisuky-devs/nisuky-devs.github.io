@@ -1,0 +1,30 @@
+name: Send Webhook on File Change
+
+on:
+  push:
+    paths:
+      - "questions.json" # Spécifie le fichier ou dossier que tu veux surveiller
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    
+    - name: Send message to Discord
+      run: |
+        curl -X POST -H "Content-Type: application/json" \
+        -d '{
+              "embeds": [
+                {
+                  "title": "Questions Impact modifiées !",
+                  "description": "**${GITHUB_ACTOR}** a mis à jour les réponses pour le prix Impact !\n\n[Accès au Teamcenter](https://teamcenter.cyborgbulls.fr/first/impact-award/soumission)",
+                  "footer": {
+                    "text": "Date: $(date +%Y-%m-%d)"
+                  },
+                  "color": 16711680
+                }
+              ]
+            }' \
+        https://discord.com/api/webhooks/1325536674549207143/sPyC0nUBV3wxK0G7ICUT2N5T5bVq6Mwk2tvDmDmDRAnsLXp38MWxfG2qP1mLEIzbAEmX
